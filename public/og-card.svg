@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f3f0e7"/>
+  <path d="M0 0h1200v630H0z" fill="none" stroke="#101b17" stroke-width="16"/>
+  <path d="M742 74h378v378H742z" fill="#101b17"/>
+  <path d="M770 108h322v4H770zm0 52h240v4H770zm0 52h286v4H770z" fill="#53665d"/>
+  <rect x="792" y="286" width="24" height="104" fill="#d8ff5f"/>
+  <rect x="838" y="246" width="24" height="144" fill="#d8ff5f"/>
+  <rect x="884" y="190" width="24" height="200" fill="#d8ff5f"/>
+  <rect x="930" y="224" width="24" height="166" fill="#d8ff5f"/>
+  <text x="76" y="98" fill="#526159" font-family="monospace" font-size="24" letter-spacing="3">FULL-STACK AI ENGINEER</text>
+  <text x="76" y="222" fill="#101b17" font-family="Arial, sans-serif" font-size="82" font-weight="600">Guvvala</text>
+  <text x="76" y="310" fill="#101b17" font-family="Arial, sans-serif" font-size="82" font-weight="600">Karthik</text>
+  <text x="76" y="406" fill="#526159" font-family="Arial, sans-serif" font-size="34">AI systems ? Product engineering</text>
+  <text x="76" y="458" fill="#526159" font-family="Arial, sans-serif" font-size="34">Reliable delivery</text>
+  <rect x="76" y="526" width="286" height="52" fill="#101b17"/>
+  <text x="100" y="560" fill="#d8ff5f" font-family="monospace" font-size="20">BUILD BEYOND THE DEMO</text>
+</svg>

@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.log
+.env
+.env.*
+!.env.example
+qa-*.png
+qa-*.jpg
+resume-preview*.png
+resume-preview*.jpg
