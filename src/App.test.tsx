@@ -10,6 +10,9 @@ describe("portfolio", () => {
     render(<App />);
 
     expect(screen.getAllByText(/Full-Stack AI Engineer/i).length).toBeGreaterThan(0);
+    expect(
+      screen.getByRole("img", { name: /Guvvala Karthik, Full-Stack AI Engineer/i }),
+    ).toHaveAttribute("src", "/guvvala-karthik.png");
     for (const project of [
       "CareerPilot AI",
       "TrackForge",
