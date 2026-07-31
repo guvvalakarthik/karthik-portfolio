@@ -40,4 +40,14 @@ describe("portfolio", () => {
       "/Guvvala_Karthik_Resume.pdf",
     );
   });
+
+  it("shows technology choices that match the project manifests", () => {
+    render(<App />);
+
+    expect(screen.getAllByText("PostgreSQL + pgvector").length).toBeGreaterThan(0);
+    expect(screen.getByText("SQLAlchemy + Alembic")).toBeInTheDocument();
+    expect(screen.getAllByText("ONNX Runtime").length).toBeGreaterThan(0);
+    expect(screen.getByText("Sentence Transformers")).toBeInTheDocument();
+    expect(screen.getAllByText("MongoDB + Mongoose").length).toBeGreaterThan(0);
+  });
 });
