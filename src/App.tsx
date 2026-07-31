@@ -226,22 +226,37 @@ function App() {
               </a>
             </div>
           </div>
-          <aside className="hero-console" aria-label="Engineering profile overview">
-            <div className="console-top">
-              <span>engineering.profile</span>
-              <div><i /><i /><i /></div>
-            </div>
-            <div className="console-body">
-              <p><span>01</span><b>role</b><em>"full-stack-ai"</em></p>
-              <p><span>02</span><b>focus</b><em>"production systems"</em></p>
-              <p><span>03</span><b>method</b><em>"measure -&gt; ship -&gt; learn"</em></p>
-              <p><span>04</span><b>location</b><em>"India"</em></p>
-              <div className="console-result">
-                <i />
-                <span>Ready to build with the team</span>
+          <div className="hero-profile">
+            <figure className="hero-portrait">
+              <img
+                alt="Guvvala Karthik, Full-Stack AI Engineer"
+                fetchPriority="high"
+                height="1220"
+                src="/guvvala-karthik.png"
+                width="1500"
+              />
+              <figcaption>
+                <strong>Guvvala Karthik</strong>
+                <span>Full-Stack AI Engineer</span>
+              </figcaption>
+            </figure>
+            <aside className="hero-console" aria-label="Engineering profile overview">
+              <div className="console-top">
+                <span>engineering.profile</span>
+                <div><i /><i /><i /></div>
               </div>
-            </div>
-          </aside>
+              <div className="console-body">
+                <p><span>01</span><b>role</b><em>"full-stack-ai"</em></p>
+                <p><span>02</span><b>focus</b><em>"production systems"</em></p>
+                <p><span>03</span><b>method</b><em>"measure -&gt; ship -&gt; learn"</em></p>
+                <p><span>04</span><b>location</b><em>"India"</em></p>
+                <div className="console-result">
+                  <i />
+                  <span>Ready to build with the team</span>
+                </div>
+              </div>
+            </aside>
+          </div>
           <div className="hero-metrics">
             <div><strong>02</strong><span>AI & software internships</span></div>
             <div><strong>05</strong><span>End-to-end product systems</span></div>
