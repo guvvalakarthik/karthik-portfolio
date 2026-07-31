@@ -22,5 +22,5 @@ from that source so the visible portfolio and résumé stay consistent.
 
 ## Deployment links still to add
 
-Live links are already configured for TrackForge and TomatoGuard. Add confirmed
-deployment URLs for CareerPilot AI, SourceLens, and Vidhya Vedha in `src/data.ts`.
+Live links are configured for CareerPilot AI, TrackForge, TomatoGuard, and Vidhya
+Vedha. SourceLens remains source-only until a deployment is provided.

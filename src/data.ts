@@ -42,6 +42,7 @@ export const projects: Project[] = [
     stack: ["Next.js", "TypeScript", "tRPC", "PostgreSQL", "Gemini", "Cloudflare R2"],
     proof: "Security boundaries, observability, and CI are first-class parts of the product.",
     github: "https://github.com/guvvalakarthik/careerpilot-ai",
+    live: "https://careerpilot-ai-henna-six.vercel.app/",
     featured: true,
     tone: "lime",
   },
@@ -120,6 +121,7 @@ export const projects: Project[] = [
     stack: ["React", "Node.js", "Express", "MongoDB", "Vitest", "REST APIs"],
     proof: "The rebuild prioritizes task completion, authorization, and clear service boundaries.",
     github: "https://github.com/guvvalakarthik/vidhyavedhaproject",
+    live: "https://vidhyavedhaproject.vercel.app/",
     tone: "amber",
   },
 ];
