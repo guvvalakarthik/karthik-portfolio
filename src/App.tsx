@@ -341,6 +341,10 @@ function App() {
               <p>Education</p>
               <h3>B.Tech, Computer Science & Engineering</h3>
               <span>Indian Institute of Information Technology Kottayam | 2022-2026</span>
+              <div className="education-secondary">
+                <h4>Intermediate, MPC</h4>
+                <span>Narayana Junior College | 2020-2022</span>
+              </div>
             </div>
             <div className="coursework">
               <span>Data Structures</span>

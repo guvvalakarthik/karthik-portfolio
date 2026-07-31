@@ -17,13 +17,14 @@ describe("portfolio", () => {
       "SourceLens",
       "Vidhya Vedha",
     ]) {
+      expect(screen.getByRole("heading", { name: project })).toBeInTheDocument();
+    }
+
     expect(screen.getAllByText("Created Jul 2026")).toHaveLength(2);
     expect(screen.getByText("Created Dec 2025")).toBeInTheDocument();
     expect(screen.getByText("Created Feb 2026")).toBeInTheDocument();
     expect(screen.getByText("Created Oct 2025")).toBeInTheDocument();
-
-      expect(screen.getByRole("heading", { name: project })).toBeInTheDocument();
-    }
+    expect(screen.getByText("Narayana Junior College | 2020-2022")).toBeInTheDocument();
   });
 
   it("includes both internships and direct contact paths", () => {

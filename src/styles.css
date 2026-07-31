@@ -1079,6 +1079,22 @@ p {
   font-size: 0.78rem;
 }
 
+.education-secondary {
+  border-top: 1px solid rgba(16, 27, 23, 0.45);
+  margin-top: 1.4rem;
+  padding-top: 1.2rem;
+}
+
+.education-secondary h4 {
+  font-size: 1rem;
+  margin: 0 0 0.45rem;
+}
+
+.education-secondary span {
+  font-size: 0.75rem;
+}
+
+
 .coursework {
   display: flex;
   flex-wrap: wrap;
