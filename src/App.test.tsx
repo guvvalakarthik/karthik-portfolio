@@ -1,5 +1,5 @@
 import "@testing-library/jest-dom/vitest";
-import { cleanup, render, screen } from "@testing-library/react";
+import { cleanup, render, screen, within } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
 import App from "./App";
 
@@ -28,6 +28,12 @@ describe("portfolio", () => {
     expect(screen.getByText("Created Feb 2026")).toBeInTheDocument();
     expect(screen.getByText("Created Oct 2025")).toBeInTheDocument();
     expect(screen.getByText("Narayana Junior College | 2020-2022")).toBeInTheDocument();
+
+    const sourceLens = screen.getByRole("heading", { name: "SourceLens" }).closest("article");
+    expect(sourceLens).not.toBeNull();
+    expect(
+      within(sourceLens as HTMLElement).getByRole("link", { name: /Live product/i }),
+    ).toHaveAttribute("href", "https://plagarismdetection.vercel.app/");
   });
 
   it("includes both internships and direct contact paths", () => {

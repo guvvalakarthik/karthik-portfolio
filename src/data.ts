@@ -142,6 +142,7 @@ export const projects: Project[] = [
     ],
     proof: "The product communicates model limits directly in its API contract and interface.",
     github: "https://github.com/guvvalakarthik/plagarism_detection",
+    live: "https://plagarismdetection.vercel.app/",
     tone: "violet",
   },
   {
