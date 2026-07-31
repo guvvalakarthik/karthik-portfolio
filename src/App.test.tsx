@@ -11,6 +11,12 @@ describe("portfolio", () => {
 
     expect(screen.getAllByText(/Full-Stack AI Engineer/i).length).toBeGreaterThan(0);
     expect(
+      screen.getByText(
+        /Full-Stack AI Engineer and 2026 Computer Science and Engineering graduate from IIIT Kottayam/i,
+      ),
+    ).toBeInTheDocument();
+    expect(screen.queryByText(/Full-Stack AI Engineer at IIIT Kottayam/i)).not.toBeInTheDocument();
+    expect(
       screen.getByRole("img", { name: /Guvvala Karthik, Full-Stack AI Engineer/i }),
     ).toHaveAttribute("src", "/guvvala-karthik.png");
     for (const project of [
