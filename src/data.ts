@@ -1,5 +1,6 @@
 export type Project = {
   id: string;
+  created: string;
   name: string;
   eyebrow: string;
   summary: string;
@@ -28,6 +29,7 @@ export const profile = {
 export const projects: Project[] = [
   {
     id: "careerpilot",
+    created: "Jul 2026",
     name: "CareerPilot AI",
     eyebrow: "Flagship · Multi-tenant AI SaaS",
     summary:
@@ -48,6 +50,7 @@ export const projects: Project[] = [
   },
   {
     id: "trackforge",
+    created: "Jul 2026",
     name: "TrackForge",
     eyebrow: "Platform · Learning infrastructure",
     summary:
@@ -69,6 +72,7 @@ export const projects: Project[] = [
   },
   {
     id: "tomatoguard",
+    created: "Feb 2026",
     name: "TomatoGuard",
     eyebrow: "ML system · Responsible inference",
     summary:
@@ -89,6 +93,7 @@ export const projects: Project[] = [
   },
   {
     id: "sourcelens",
+    created: "Dec 2025",
     name: "SourceLens",
     eyebrow: "NLP · Evidence-first similarity",
     summary:
@@ -107,6 +112,7 @@ export const projects: Project[] = [
   },
   {
     id: "vidhyavedha",
+    created: "Oct 2025",
     name: "Vidhya Vedha",
     eyebrow: "Full stack · Civic services",
     summary:

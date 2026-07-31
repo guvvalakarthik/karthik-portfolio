@@ -793,6 +793,23 @@ p {
 .route-line i:nth-child(2) { left: 48%; }
 .route-line i:nth-child(3) { right: 0; }
 
+.project-meta {
+  align-items: baseline;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.project-meta .eyebrow {
+  margin-bottom: 0;
+}
+
+.project-meta > span {
+  color: var(--muted);
+  font: 0.6rem var(--mono);
+  white-space: nowrap;
+}
+
 .project-copy {
   align-self: center;
 }
@@ -882,6 +899,13 @@ p {
   gap: 1.4rem;
   margin-top: 1.5rem;
 }
+
+.action-separator {
+  color: var(--line);
+  font: 0.78rem var(--mono);
+  user-select: none;
+}
+
 
 .text-link {
   align-items: center;

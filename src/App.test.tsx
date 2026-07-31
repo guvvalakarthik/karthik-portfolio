@@ -17,6 +17,11 @@ describe("portfolio", () => {
       "SourceLens",
       "Vidhya Vedha",
     ]) {
+    expect(screen.getAllByText("Created Jul 2026")).toHaveLength(2);
+    expect(screen.getByText("Created Dec 2025")).toBeInTheDocument();
+    expect(screen.getByText("Created Feb 2026")).toBeInTheDocument();
+    expect(screen.getByText("Created Oct 2025")).toBeInTheDocument();
+
       expect(screen.getByRole("heading", { name: project })).toBeInTheDocument();
     }
   });
@@ -29,7 +34,7 @@ describe("portfolio", () => {
     expect(
       screen.getByRole("link", { name: /guvvalakarthik2004@gmail.com/i }),
     ).toHaveAttribute("href", "mailto:guvvalakarthik2004@gmail.com");
-    expect(screen.getByRole("link", { name: /r?sum?/i })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: /resume/i })).toHaveAttribute(
       "href",
       "/Guvvala_Karthik_Resume.pdf",
     );

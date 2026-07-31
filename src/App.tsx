@@ -122,7 +122,10 @@ function ProjectCard({ project }: { project: Project }) {
     <article className={`project-card ${project.featured ? "featured" : ""}`}>
       <ProjectVisual project={project} />
       <div className="project-copy">
-        <p className="eyebrow">{project.eyebrow}</p>
+        <div className="project-meta">
+          <p className="eyebrow">{project.eyebrow}</p>
+          <span>Created {project.created}</span>
+        </div>
         <h3>{project.name}</h3>
         <p className="project-summary">{project.summary}</p>
         <div className="case-file">
@@ -144,18 +147,21 @@ function ProjectCard({ project }: { project: Project }) {
         <p className="proof-note"><b>Evidence:</b> {project.proof}</p>
         <div className="project-actions">
           {project.live && (
-            <ExternalLink href={project.live} className="text-link">
-              Live product <Icon name="arrow" />
-            </ExternalLink>
+            <>
+              <ExternalLink href={project.live} className="text-link">
+                Live product <Icon name="arrow" />
+              </ExternalLink>
+              <span aria-hidden="true" className="action-separator">|</span>
+            </>
           )}
+          <ExternalLink href={project.github} className="text-link muted">
+            GitHub <Icon name="github" />
+          </ExternalLink>
           {project.api && (
-            <ExternalLink href={project.api} className="text-link muted">
+            <ExternalLink href={project.api} className="text-link muted api-link">
               API docs <Icon name="arrow" />
             </ExternalLink>
           )}
-          <ExternalLink href={project.github} className="text-link muted">
-            Source <Icon name="github" />
-          </ExternalLink>
         </div>
       </div>
     </article>
