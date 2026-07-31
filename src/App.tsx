@@ -213,7 +213,8 @@ function App() {
               <span> real users, real data, and real failure modes.</span>
             </h1>
             <p className="hero-intro">
-              I'm {profile.name}, a {profile.role} at IIIT Kottayam. I work across
+              I'm {profile.name}, a {profile.role} and 2026 Computer Science and
+              Engineering graduate from IIIT Kottayam. I work across
               model integration, product engineering, APIs, data systems, and the
               quality gates that turn demos into dependable software.
             </p>
