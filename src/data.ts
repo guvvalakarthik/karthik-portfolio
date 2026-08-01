@@ -179,8 +179,8 @@ export const skillGroups = [
   {
     title: "AI & LLM systems",
     items: [
-      "Gemini API",
-      "Vertex AI",
+      "Generative AI",
+      "Machine Learning",
       "TensorFlow",
       "ONNX Runtime",
       "RAG + embeddings",
